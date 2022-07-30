@@ -1,0 +1,172 @@
+@import '../styles/custom-media.css';
+@import '../styles/custom-properties.css';
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white; 
+  transform: translate(-50%, -50%);
+}
+.bgImg {
+    width:100%;
+  object-fit: none; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
+}
+.imgcontainer {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.contactus button {
+  border: 0;
+  background-color: grey;
+  border-radius: 10px;
+  width: 100%;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 10px;
+  padding: 0.25em 0em;
+}
+
+.contactus select {
+  color: grey;
+  background-color: white;
+}
+
+.contactus {
+  display: flex;
+  padding-top: 1.5em;
+}
+.container {
+  box-sizing: border-box;
+  max-width: 90%;
+  padding: 0em 1.5em 1.5em 1.5em;
+  margin: 0 auto;
+}
+  .contactus label.file {
+    padding: 0px 12px;
+    padding-top: 5px;
+  }
+
+  .contactus .fileuploaddiv {
+    border-radius: 10px;
+    border: 4px solid #ccc;
+    padding: 0;
+    background-color: white;
+  }
+
+    .contactus .fileuploaddiv .error {
+      display: none;
+      padding: 0px 12px;
+    }
+
+  .contactus .fileupload {
+    border: 0;
+  }
+
+.contactcard h5 {
+  border-bottom: solid 2px black;
+}
+
+.contactus .left {
+  width: 100%;
+}
+
+  .contactus .left .flex {
+    display: flex;
+    box-sizing: border-box;
+  }
+
+.contactus label {
+  padding: 0;
+}
+
+.contactus .right {
+  width: 40%;
+  padding-left: 1em;
+}
+
+.contactform div {
+  width: 100%;
+  padding: 0.25em 0.5em;
+}
+
+.contactform .textarea {
+  padding: 0.5em 1em;
+  box-sizing: border-box;
+}
+
+  .contactform .textarea textarea {
+    height: 10em;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 10px;
+  }
+
+.contactform input {
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.contactform input {
+  border-radius: 10px;
+  border-width: 4px;
+}
+
+.contactform .file {
+  border-radius: 0;
+  border-width: 0px;
+}
+
+  .contactform .file btn {
+    background-color: black;
+  }
+
+.contactform select {
+  border-radius: 10px;
+  border-width: 4px;
+}
+
+  .contactform select:focus {
+    outline: none;
+    border-color: black;
+    border-radius: 10px;
+    transition: border 0.3s linear;
+    border-width: 4px;
+  }
+
+.contactform textarea {
+  border-radius: 10px;
+  border-width: 4px;
+  box-sizing: border-box;
+}
+
+ .contactform textarea:focus {
+    outline: none;
+    border-color: black;
+    border-radius: 10px;
+    border-width: 4px;
+    transition: border 0.3s linear;
+  }
+
+.contactform input:focus {
+  outline: none;
+  border-radius: 10px;
+  border-color: black;
+  border-width: 4px;
+  transition: border 0.3s linear;
+}
+
+.contactform button {
+  border: 0;
+  background-color: grey;
+  border-radius: 10px;
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+  padding: 15px 0px;
+}

@@ -9,33 +9,72 @@
     min-height: calc(100% - 91px - 155px);
   }
 }
-
+.footericon {
+  max-width: 90%;
+  MARGIN-LEFT: AUTO;
+  MARGIN-RIGHT: AUTO;
+}
 .footer {
+  color: white;
   border-top: 1px solid var(--color-very-light-gray);
 
   @nest & a {
-    color: inherit;
+    color: white;
     text-decoration: none;
 
     @media (hover: hover) {
       @nest &:hover {
-        color: var(--color-accent);
+        color: white;
       }
     }
   }
 }
+footer {
+}
 
+  footer .container1 {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer a {
+    color: white !important;
+    text-decoration: none !important;
+  }
+
+    footer a:hover {
+      color: grey !important;
+      transition: color 0.3s linear;
+    }
+
+  footer .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+.fa {
+  padding: 20px 20px;
+}
 .footerWrapper {
   box-sizing: border-box;
-  max-width: 960px;
-  padding: 4.5em 1.5em 1.5em;
+  //max-width: 960px;
+  padding: 1em 3em;
   margin: 0 auto;
+  color: white;
+  background-color: black;
 
   @media (--media-min-small) {
     padding: 6em 2em 2em;
   }
 }
-
+.footerlinks {
+  list-style-type: none;
+}
 .companyAddress {
   text-align: center;
   margin: 0 0 1rem;

@@ -6,7 +6,17 @@
   z-index: 100;
   background-color: black;
 }
-
+.people {
+  text-align: center;
+  max-width: 50%;
+  padding: 0em 1.5em;
+}
+.img{
+  width:300px;
+}
+.layout {
+  display: flex;
+}
 .wrapper {
   box-sizing: border-box;
   margin: 0 auto;
@@ -18,9 +28,6 @@
   @media (--media-min-small) {
     padding: 1.5em 1.5em;
   }
-}
-.title {
-  vertical-align: top;
 }
 .logo {
     width:1.5em;
