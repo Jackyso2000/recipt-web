@@ -23,7 +23,9 @@
     "eslint-plugin-react": "^7.28.0",
     "lerna": "^4.0.0",
     "prettier": "^2.5.1",
-    "type-fest":"^0.13.1"
+    "type-fest": "^0.13.1",
+    "bindings": "1.5.0",
+    "nan": "2.16.0"
   },
   "dependencies": {
     "aos": "^2.3.4",
