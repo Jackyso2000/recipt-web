@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import { graphql } from "gatsby";
+import { Link } from 'gatsby';
+
 import {
   filterOutDocsPublishedInTheFuture,
   filterOutDocsWithoutSlugs,
@@ -18,6 +20,7 @@ import payngo from '../images/payngo.png'
 import list from '../images/receiptlist.png'
 import member from '../images/membership.png'
 import bg from '../images/background.jpg'
+import contactus from '../images/contact-us.png'
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 
@@ -107,14 +110,22 @@ const IndexPage = (props) => {
         description={site.description}
         keywords={site.keywords}
       />
-        <div class="bgcontainer">
-          <img class="bg" src={bg} alt="portomono glass protect screen protector scratch test" />
+      <div class="bgcontainer" style={{
+        backgroundImage: "url(" + bg + ")",
+        backgroundPosition: 'center',
+        backgroundRepeat: 'repeat',
+        height: '600px',
+        width:'100%'
+      }}>
+          {/*<img class="bg" src={bg} alt="portomono glass protect screen protector scratch test" />*/}
+        <h1 class="bgcenter">Welcome to {site.title}</h1>
 
-          <h1 class="bgcenter">Welcome to {site.title}</h1>
-          </div>
+          <h2 class="bgcenter1">The Advanced POS System that offers more features than ever.</h2>
+      </div>
+      <h1 class="title">Our Features</h1>
         <div class="scroll">
           <div class="scrollcontainer" data-aos="fade-up"
-            data-aos-anchor-placement="top-center">
+            data-aos-anchor-placement="top">
         <div class="feature">
           <div class="left1">
             <img src={money} class="left" alt="portomono glass protect screen protector scratch test" />
@@ -127,7 +138,7 @@ const IndexPage = (props) => {
         </div>
 
           <div class="scrollcontainer" data-aos="fade-up"
-            data-aos-anchor-placement="top-center">
+            data-aos-anchor-placement="top">
         <div class="black">
 
         <div class="feature">
@@ -143,7 +154,7 @@ const IndexPage = (props) => {
         </div>
         </div>
         <div class="scrollcontainer" data-aos="fade-up"
-          data-aos-anchor-placement="top-center">
+          data-aos-anchor-placement="top">
           <div class="feature">
             <div class="left1">
               <img src={thirdpartyreceipt} class="left" alt="portomono glass protect screen protector scratch test" />
@@ -157,7 +168,7 @@ const IndexPage = (props) => {
       
       
           <div class="scrollcontainer" data-aos="fade-up"
-            data-aos-anchor-placement="top-center">
+            data-aos-anchor-placement="top">
           <div class="black">
 
             <div class="feature">
@@ -171,7 +182,20 @@ const IndexPage = (props) => {
               </div>
             </div>
             </div>
+        </div>
+        <div class="installationguide">
+          <div class="text">
+            <div class="lefty">
+              Excited to find out more about our service?
+            </div>
+            <div class="centre">
+              <img src={contactus} loading="lazy" alt="contactus" />
+            </div>
+            <div class="centre1">
+              <Link to="/contact/"><button class="btn">CONTACT US NOW</button></Link>
+            </div>
           </div>
+        </div>
         </div>
          </Layout>
   );

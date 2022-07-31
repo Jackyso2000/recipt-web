@@ -1,24 +1,29 @@
-import React from "react";
-import Header from "./header";
+import React from 'react'
+import Container from '../components/container'
+import SEO from '../components/seo'
+import Layout from '../containers/layout'
 import { Link } from 'gatsby'
-import Helmet from 'react-helmet'
-import "../styles/layout.css";
-import * as styles from "./layout.module.css";
-import favicon from '../images/Recipt_logo.ico'
+import * as styles1 from "../components/thank-you.module.css";
+import * as styles from "../components/layout.module.css";
+import Header from "../components/header";
+import "../components/thank-you.css";
 
-const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
-  <>
-    <Helmet>
-      <link rel="icon" href={favicon} />
-    </Helmet>
-    <Header
-      siteTitle={siteTitle}
-      onHideNav={onHideNav}
-      onShowNav={onShowNav}
-      showNav={showNav}
+const thankYouPage = props => {
+
+
+    return (
+      <Container>
+      <Header
     />
-    <div className={styles.content}>{children}</div>
-    <footer className={styles.footerWrapper}>
+        <div className={styles1.thankyou}>
+          <h1>Thank you for getting in touch with us.</h1>
+          <h4>We will try our best to get back to you in one business day.</h4>
+          <div className={styles1.center}>
+            <Link className={styles1.btn} to="/">Back To Home</Link>
+          </div>
+        </div>
+        <div class="thankyou">
+      <footer className={styles.footerWrapper}>
       <div class="container1">
         <div class="row">
 
@@ -48,8 +53,12 @@ const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
 
         </div>
       </div>
-    </footer>
-  </>
-);
+          </footer>
+        </div>
 
-export default Layout;
+      </Container>
+
+    )
+}
+
+export default thankYouPage

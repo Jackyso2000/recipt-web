@@ -7,7 +7,7 @@ import * as styles from "../components/about-us.module.css";
 
 const NotFoundPage = () => (
   <Layout >
-
+    <h1 className={styles.h1} >Our Team</h1>
     <div className={styles.layout}>
     <div className={styles.people}>
       <img

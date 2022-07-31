@@ -75,6 +75,12 @@ color:white;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.bgcenter1 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .bg {
 width:100%;
 height: 500px;
@@ -82,3 +88,62 @@ height: 500px;
 .mainbody {
   overflow: hidden;
 }
+.title {
+    text-align:center;
+}
+
+.installationguide {
+  background-color: white;
+}
+
+  .installationguide .lefty {
+    padding-top: 1em;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .installationguide .btn {
+    font-size: 22px;
+    font-weight: 600;
+    margin-left: auto;
+    margin-right: auto;
+    color:white;
+    padding: 15px 15px;
+    border-radius:10px;
+    background-color: black;
+  }
+
+  .installationguide .centre1 {
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+    text-align: center;
+  }
+
+  .installationguide .centre {
+    padding-top: 1.5em;
+    padding-bottom: 1.2em;
+    text-align: center;
+  }
+
+  .installationguide img {
+    width: 12%;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+  }
+.thankyou .btn {
+  font-size: 22px;
+  font-weight: 600;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  color: white;
+}
+
+.thankyou .center {
+  padding-top: 1.5em;
+  padding-bottom: 2em;
+  text-align: center;
+}
+
