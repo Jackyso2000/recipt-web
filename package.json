@@ -13,10 +13,6 @@
     "postinstall": "lerna bootstrap",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "engines": {
-    "node": "16.13.2",
-    "npm": "8.1.2"
-  },
   "devDependencies": {
     "@sanity/cli": "^2.26.0",
     "babel-eslint": "^10.1.0",
