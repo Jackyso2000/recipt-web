@@ -11,6 +11,10 @@
     "format": "prettier-eslint --write \"**/*.js\" \"!.cache/**\" \"!node_modules/**\" \"!public/**\"",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
+  "engines": {
+    "node": "16.13.2",
+    "npm": "8.1.2"
+  },
   "devDependencies": {
     "dotenv": "^16.0.0",
     "postcss": "^8.4.6",
